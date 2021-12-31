@@ -1,0 +1,64 @@
+# #x<-factor(c(TRUE,TRUE,FALSE,TRUE,FALSE))
+# #x
+# #table(x)
+# #x
+# #unclass(x)
+# #height<-c(130,140,160)
+# #weight<-c(40,60,70)
+# #gender<-c("M","M","F")
+# #table<-data.frame(height,weight,gender)
+# #table
+# #is.factor(table)
+# #print(is.factor(table$height))
+# #print(is.factor(table$weight))
+# #print(is.factor(table$gender))
+# #height1<-c(NaN,140,NA)
+# #is.na(height1)
+# #is.nan(height1)
+# #initial<-read.table("dat.csv",nrows=24)
+# x <- c("f", "e","d","c","b","a","*")
+# x[4:1]
+# x[x<"b"]
+# x <-list(foo = 1:4,bar=0.6)
+# x[1]
+# x[2]
+# x$foo
+# x$bar
+# x[["bar"]]
+# x["bar"]$bar
+# x["bar"]
+# 
+# x["$foo"]
+# x<-list(foo=1:4 ,bar=0.6,baz="hello")
+# x[c(1,2)]
+# x<-list(a=list(10,12,14), b=c(3.14,2.81))
+# x[[c(2,2)]]
+#x<-matrix(1:6,2,3)
+# x[1,2]
+# x[1,]
+# x[,1]
+# x[,2]
+# x[2,]
+# y=rbind(x)
+# z=cbind(x)
+# rbind(x)
+# y[1,]
+# z[1,]
+x<-1:6
+rbind(x)
+y<-1:6
+cbind(y)
+x<-c(1,NA,2,4,NA,5)
+y<-c("a",NA,"b", "c",NA,"d")
+good<-complete.cases(x,y)
+good
+x[good]
+y[good]
+airquality[1:10, ]
+good<-complete.cases(airquality)
+good
+
+simplify2array(good)
+airquality*good
+y<-matrix(rep(10,4),2,2)
+x*y
